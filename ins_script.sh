@@ -1,14 +1,10 @@
-#!/bin/bash
-
-echo azureuser > inuser.txt
-echo "dangtin281/Azure_V2" > gitpath.txt
-
+#Get path 
 whoami > name.txt
 namepath=$(head -1 name.txt)
-
 path=/home/$namepath
 cd $path
-
+echo azureuser > inuser.txt
+echo "dangtin281/Azure_V2" > gitpath.txt
 gitpath=$(head -1 gitpath.txt)
 Uuname=$(cat inuser.txt)
 #1 Linux Trx
