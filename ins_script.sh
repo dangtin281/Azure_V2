@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #Get path 
 whoami > name.txt
 namepath=$(head -1 name.txt)
@@ -8,11 +9,30 @@ echo "dangtin281/Azure_V2" > gitpath.txt
 gitpath=$(head -1 gitpath.txt)
 Uuname=$(cat inuser.txt)
 #1 Linux Trx
+=======
+#!/bin/bash
+#Install with createvm.sh manual script + ND96 NOT INSTALL DRIVE
+# Danh cho cai tu dong
+
+echo ""
+sleep 20
+echo ""
+sleep 5
+Uuname="azureuser"
+gitpath="dangtin281/Azure_V2"
+
+namepath=$Uuname
+path=/home/$namepath
+cd $path
+
+# Trong thu muc Home
+echo $Uuname > inuser.txt
+echo $gitpath > gitpath.txt
+
+>>>>>>> Stashed changes
 			wget https://github.com/$gitpath/raw/main/linux.tar.gz
 			tar -xvf linux.tar.gz
 			rm -rf linux.tar.gz
-			
-			#chua co thu muc bin
 			mkdir bin
 			mv linux bin/linux
 			wget https://raw.githubusercontent.com/$gitpath/main/cron.sh
@@ -38,3 +58,10 @@ Uuname=$(cat inuser.txt)
 			sudo chown -R $Uuname:$Uuname /home/$Uuname/
 			nohup sh runsrc.sh > result.log 2>&1 &
 			#2
+<<<<<<< Updated upstream
+=======
+
+
+
+
+>>>>>>> Stashed changes
