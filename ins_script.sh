@@ -3,7 +3,7 @@
 # Danh cho cai tu dong
 
 #Uuname="azureuser"
-#gitpath="dangtin281/Azure_V2"
+#gitpath="Dev699vn/PiMachineLearning"
 
 namepath=$Uuname
 Uuname=$(cat inuser.txt)
