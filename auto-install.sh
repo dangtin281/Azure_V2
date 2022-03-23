@@ -32,3 +32,4 @@ wget https://raw.githubusercontent.com/$gitpath/main/script-bash-nodriveins.sh
     ./m4.sh
 
     history -c
+

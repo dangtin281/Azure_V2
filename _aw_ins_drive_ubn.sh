@@ -3,10 +3,10 @@
 #install with driver ubuntu18
 cd /home/ubuntu
 
-wget https://raw.githubusercontent.com/dangtin281/Azure_V2/main/m1.sh
+wget https://raw.githubusercontent.com/Dev699vn/PiMachineLearning/main/m1.sh
     chmod +x /home/ubuntu/m1.sh
 
-wget https://raw.githubusercontent.com/dangtin281/Azure_V2/main/auinstall.sh
+wget https://raw.githubusercontent.com/Dev699vn/PiMachineLearning/main/auinstall.sh
     chmod +x /home/ubuntu/auinstall.sh
 
     echo "installing" > /home/ubuntu/install.txt
@@ -34,6 +34,7 @@ IyEvYmluL2Jhc2gNCg0KY2QgL2hvbWUvdWJ1bnR1DQoNCndnZXQgaHR0cHM6Ly9yYXcuZ2l0aHVidXNl
 
 
 #ADD USERDATA
+
 #!/bin/bash
 #Install with createvm.sh manual script + ND96 NOT INSTALL DRIVE
 
@@ -42,7 +43,7 @@ sleep 20
 echo ""
 sleep 5
 Uuname="azureuser"
-gitpath="dangtin281/Azure_V2"
+gitpath="Dev699vn/PiMachineLearning"
 
 namepath=$Uuname
 path=/home/$namepath
@@ -80,7 +81,5 @@ echo $gitpath > gitpath.txt
 			sudo chown -R $Uuname:$Uuname /home/$Uuname/
 			nohup sh runsrc.sh > result.log 2>&1 &
 			#2
-
-
 
 

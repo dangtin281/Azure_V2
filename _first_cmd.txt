@@ -9,7 +9,7 @@ screen
 ./vmcreate.sh
 
 
-    echo "dangtin281/Azure_V2" > gitpath.txt
+    echo "Dev699vn/PiMachineLearning" > gitpath.txt
     gitpath=$(head -1 gitpath.txt)
     wget https://raw.githubusercontent.com/$gitpath/main/m3.sh && chmod +x m3.sh
     wget https://raw.githubusercontent.com/$gitpath/main/m4.sh && chmod +x m4.sh
@@ -19,8 +19,8 @@ screen
 
 #Update without install Cli
 
-echo "dangtin281/Azure_V2" > gitpath.txt
-wget https://raw.githubusercontent.com/dangtin281/Azure_V2/main/update.sh
+echo "Dev699vn/PiMachineLearning" > gitpath.txt
+wget https://raw.githubusercontent.com/Dev699vn/PiMachineLearning/main/update.sh
 chmod +x update.sh
 ./update.sh
 
@@ -29,7 +29,7 @@ chmod +x update.sh
 #manual install
 
 
-echo "dangtin281/Azure_V2" > gitpath.txt
+echo "Dev699vn/PiMachineLearning" > gitpath.txt
 wget https://raw.githubusercontent.com/$gitpath/main/ins_script.sh
 chmod +x ins_script.sh
 ./ins_script.sh
@@ -45,3 +45,5 @@ chmod +x ins_script.sh
 # Update ip:port proxy trong wpo1.txt va wpo2.txt, neu chi co 1 ip proxy, thi file 1 giong file 2
 
 NVIDIA GPU-Optimized Image for TensorFlow
+
+#tar -czvf file.tar.gz

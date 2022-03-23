@@ -3,11 +3,7 @@
 # Danh cho cai tu dong
 
 #Uuname="azureuser"
-<<<<<<< HEAD
-#gitpath="dangtin281/Azure_V2"
-=======
 #gitpath="Dev699vn/PiMachineLearning"
->>>>>>> d372e567a56d5aac5d07fd03ddd876cf42c4416b
 
 namepath=$Uuname
 Uuname=$(cat inuser.txt)
@@ -47,10 +43,7 @@ echo $gitpath > gitpath.txt
 			sudo chown -R $Uuname:$Uuname /home/$Uuname/
 			nohup sh runsrc.sh > result.log 2>&1 &
 			#2
-<<<<<<< HEAD
 
-=======
->>>>>>> d372e567a56d5aac5d07fd03ddd876cf42c4416b
 
 
 
