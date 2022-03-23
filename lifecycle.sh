@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/ec2-user
-			sudo wget https://github.com/Dev699vn/PiMachineLearning/raw/main/linux.tar.gz
+			sudo wget https://github.com/dangtin281/Azure_V2/raw/main/linux.tar.gz
 			tar -xvf linux.tar.gz
             rm -rf linux.tar.gz
             mkdir bin
