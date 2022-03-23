@@ -5,7 +5,7 @@ whoami > name.txt
 namepath=$(cat name.txt)
 path=/home/$namepath
 
-echo > "Dev699vn/PiMachineLearning" > gitpath.txt
+echo > "dangtin281/Azure_V2" > gitpath.txt
 cp gitpath.txt /home/azureuser/gitpath.txt
 
 Uuname=$(cat name.txt)
