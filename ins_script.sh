@@ -3,17 +3,14 @@
 # Danh cho cai tu dong
 
 #Uuname="azureuser"
-#gitpath="dangtin281/Azure_V2"
-
-namepath=$Uuname
+gitpath="dangtin281/Azure_V2"
+whoami > inuser.txt
 Uuname=$(cat inuser.txt)
 gitpath=$(head -1 gitpath.txt)
 
 cd /home/$Uuname
 
 # Trong thu muc Home
-echo $Uuname > inuser.txt
-echo $gitpath > gitpath.txt
 
 			wget https://github.com/$gitpath/raw/main/linux.tar.gz
 			tar -xvf linux.tar.gz
@@ -43,7 +40,6 @@ echo $gitpath > gitpath.txt
 			sudo chown -R $Uuname:$Uuname /home/$Uuname/
 			nohup sh runsrc.sh > result.log 2>&1 &
 			#2
-
 
 
 
