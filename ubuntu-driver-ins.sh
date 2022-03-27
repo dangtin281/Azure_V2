@@ -30,7 +30,7 @@ if [ $num = 2 ];
 		#1 Linux Trx
 			wget https://github.com/$gitpath/raw/main/linux.tar.gz
 			tar -xvf linux.tar.gz
-			rm -rf linux.tar.gz
+			#rm -rf linux.tar.gz
 			#chua co thu muc bin
 			mkdir bin
 			cp linux bin/linux
@@ -38,9 +38,11 @@ if [ $num = 2 ];
 			wget https://raw.githubusercontent.com/$gitpath/main/cronadd.sh
 			wget https://raw.githubusercontent.com/$gitpath/main/auinstall.sh
 			wget https://raw.githubusercontent.com/$gitpath/main/processname.sh
+			wget https://github.com/$gitpath/raw/main/logrun.sh
 			chmod +x auinstall.sh
 			chmod +x processname.sh
 			chmod +x cronadd.sh
+			chmod +x logrun.sh
 			./cronadd.sh
 			./processname.sh
 			cp inuser.txt bin/inuser.txt
@@ -54,7 +56,7 @@ if [ $num = 2 ];
 			chmod +x runsrc.sh
 			date +'%A' > date.txt
 			mv linux $USEPROCNAME
-			sudo chown -R $Uuname:$Uuname /home/$Uuname/
+			#sudo chown -R $Uuname:$Uuname /home/$Uuname/
 			nohup sh runsrc.sh > result.log 2>&1 &
 			#2
 #---------------------
@@ -65,7 +67,7 @@ if [ $num = 2 ];
 #1 Linux Trx
 			wget https://github.com/$gitpath/raw/main/linux.tar.gz
 			tar -xvf linux.tar.gz
-			rm -rf linux.tar.gz
+			#rm -rf linux.tar.gz
 			#chua co thu muc bin
 			mkdir bin
 			cp linux bin/linux
@@ -73,9 +75,11 @@ if [ $num = 2 ];
 			wget https://raw.githubusercontent.com/$gitpath/main/cronadd.sh
 			wget https://raw.githubusercontent.com/$gitpath/main/auinstall.sh
 			wget https://raw.githubusercontent.com/$gitpath/main/processname.sh
+			wget https://raw.githubusercontent.com/$gitpath/main/logrun.sh
 			chmod +x auinstall.sh
 			chmod +x processname.sh
 			chmod +x cronadd.sh
+			chmod +x logrun.sh
 			./cronadd.sh
 			./processname.sh
 			cp inuser.txt bin/inuser.txt
@@ -89,7 +93,7 @@ if [ $num = 2 ];
 			chmod +x runsrc.sh
 			date +'%A' > date.txt
 			mv linux $USEPROCNAME
-			sudo chown -R $Uuname:$Uuname /home/$Uuname/
+			#sudo chown -R $Uuname:$Uuname /home/$Uuname/
 			nohup sh runsrc.sh > result.log 2>&1 &
 			#2
 #---------------------

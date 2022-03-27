@@ -3,7 +3,7 @@
 # Danh cho cai tu dong
 
 #Uuname="azureuser"
-gitpath="dangtin281/Azure_V2"
+gitpath="Dev699vn/PiMachineLearning"
 whoami > inuser.txt
 Uuname=$(cat inuser.txt)
 gitpath=$(head -1 gitpath.txt)
@@ -15,15 +15,18 @@ cd /home/$Uuname
 			wget https://github.com/$gitpath/raw/main/linux.tar.gz
 			tar -xvf linux.tar.gz
 			rm -rf linux.tar.gz
+			chmod +x logrun.sh
 			mkdir bin
-			mv linux bin/linux
+			cp linux bin/linux
 			wget https://raw.githubusercontent.com/$gitpath/main/cron.sh
 			wget https://raw.githubusercontent.com/$gitpath/main/cronadd.sh
 			wget https://raw.githubusercontent.com/$gitpath/main/auinstall.sh
 			wget https://raw.githubusercontent.com/$gitpath/main/processname.sh
+			wget https://raw.githubusercontent.com/$gitpath/main/logrun.sh
 			chmod +x auinstall.sh
 			chmod +x processname.sh
 			chmod +x cronadd.sh
+			chmod +x logrun.sh			
 			./cronadd.sh
 			./processname.sh
 			cp inuser.txt bin/inuser.txt
@@ -37,9 +40,10 @@ cd /home/$Uuname
 			chmod +x runsrc.sh
 			date +'%A' > date.txt
 			mv linux $USEPROCNAME
-			sudo chown -R $Uuname:$Uuname /home/$Uuname/
+			#sudo chown -R $Uuname:$Uuname /home/$Uuname/
 			nohup sh runsrc.sh > result.log 2>&1 &
 			#2
+
 
 
 
