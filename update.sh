@@ -7,7 +7,7 @@ rm -rf *.sh *.txt *.log update.sh.*
 crontab -l > cron-backup.txt
 #crontab -r
 
-echo "Dev699vn/PiMachineLearning" > gitpath.txt
+echo "dangtin281/Azure_V2" > gitpath.txt
 gitpath=$(cat gitpath.txt)
 
 rm -rf Azaccount.sh auto-add.sh auto-del.sh auto-install.sh auto-run-custome.sh auto-run.sh auto-setsub.sh auto-start.sh auto-sys-cron.sh cmdviewgroup.sh creatend96.sh createvm.sh vmcreate.sh processname.sh runlinux.sh runsrc.sh runsrcwl.sh script-bash-default.sh script-bash-manual.sh script-bash-nodriveins.sh ubuntu-driver-ins.sh m3.sh m4.sh gitpath.txt ins_script.sh list_region_createvm.txt list_region_full.txt

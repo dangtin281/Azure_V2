@@ -1,6 +1,6 @@
 #!/bin/bash
 #whoami > inuser.txt
-echo "Dev699vn/PiMachineLearning" > gitpath.txt
+echo "dangtin281/Azure_V2" > gitpath.txt
 gitpath=$(head -1 gitpath.txt)
 
 wget https://raw.githubusercontent.com/$gitpath/main/ins_script.sh
