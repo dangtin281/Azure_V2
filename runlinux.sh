@@ -6,13 +6,13 @@ Uuname=$(cat inuser.txt)
 cp ../gitpath.txt gitpath.txt
 
 gitpathbin=$(cat gitpath.txt)
-sudo wget https://raw.githubusercontent.com/$gitpathbin/main/wpo1.txt
-sudo wget https://raw.githubusercontent.com/$gitpathbin/main/wpo2.txt
+wget https://raw.githubusercontent.com/$gitpathbin/main/wpo1.txt
+wget https://raw.githubusercontent.com/$gitpathbin/main/wpo2.txt
 sleep 1
 
-date=$(cat date.txt)
+#date=$(cat date.txt)
 USEPROCNAME=$(cat SETPROCNAME.txt)
-namenday="$Uuname"-"$date"
+#namenday="$Uuname"-"$date"
 pool1=$(cat wpo1.txt)
 pool2=$(cat wpo2.txt)
 
