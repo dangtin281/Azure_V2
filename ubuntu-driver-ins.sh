@@ -1,6 +1,7 @@
 #!/bin/bash
 sleep 10
 gitpath=$(head -1 gitpath.txt)
+whoami > inuser.txt
 
 yes '' | sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt install -y nvidia-driver-418
@@ -28,6 +29,7 @@ if [ $num = 2 ];
 	then
 		echo "RUN PROCESS 1"; 
 		#1 Linux Trx
+			whoami > inuser.txt
 			wget https://github.com/$gitpath/raw/main/linux.tar.gz
 			tar -xvf linux.tar.gz
 			#rm -rf linux.tar.gz
@@ -65,6 +67,7 @@ if [ $num = 2 ];
 		echo "RUN PROCESS 2"; 
 			#---------------------
 #1 Linux Trx
+			whoami > inuser.txt
 			wget https://github.com/$gitpath/raw/main/linux.tar.gz
 			tar -xvf linux.tar.gz
 			#rm -rf linux.tar.gz
